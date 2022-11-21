@@ -57,6 +57,9 @@ public class employee {
         ArrayList<employee> arr=new ArrayList<employee>();
 
         System.out.println("Enter the option:");
+
+        while(fla)
+        {
         System.out.println("--------------------------------------------");
         System.out.println("1.Add\n2.View\n3.Search\n4.Delete\n5.Exit");
         Scanner sc = new Scanner(System.in);
@@ -83,7 +86,23 @@ public class employee {
                 arr.add(e);
                 break;
 
-        }
+            case 2:
+                System.out.println("The details are:");
+                for (int i = 0; i < arr.size(); i++) {
+                    System.out.println("employee details");
+                    System.out.println("Id:"+arr.get(i).ecode);
+                    System.out.println("name:"+arr.get(i).name);
+                    System.out.println("designation:"+arr.get(i).designation);
+                    System.out.println("salary:"+arr.get(i).salary);
+                    System.out.println("company:"+arr.get(i).cname);
+                    System.out.println("number:"+arr.get(i).ph);
+                    System.out.println("email:"+arr.get(i).email);
+
+                }
+                break;
+
+
+        }}
 
     }
 }
