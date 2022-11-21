@@ -101,6 +101,28 @@ public class employee {
                 }
                 break;
 
+            case 3:
+                System.out.println("enter the emp code to be search");
+                Scanner sca = new Scanner(System.in);
+                int ecod = sca.nextInt();
+                for (employee e1 : arr) {
+                    if (ecod == e1.ecode) {
+                        System.out.println("Details of employee with employee code " + ecod + "is ");
+                        System.out.println("id:"+e1.ecode);
+                        System.out.println("name"+e1.name);
+                        System.out.println("designation"+e1.designation);
+                        System.out.println("salary"+e1.salary);
+                        System.out.println("company"+e1.cname);
+                        System.out.println("phone"+e1.ph);
+                        System.out.println("email"+e1.email);
+
+                    } else {
+                        System.out.println("No such employee found");
+                    }
+                }
+                break;
+
+
 
         }}
 
