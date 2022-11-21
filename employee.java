@@ -50,7 +50,7 @@ public class employee {
     public String getEmail() {
         return email;
     }
-
+    static  employee w;
     public static void main(String[] args) {
         int op;
         boolean fla=true;
@@ -121,6 +121,21 @@ public class employee {
                     }
                 }
                 break;
+
+            case 4:
+                System.out.println("Enter the employee code");
+                Scanner obj2 = new Scanner(System.in);
+                int ecode2 = obj2.nextInt();
+                for(employee i:arr)
+                {
+                    if(ecode2==i.ecode)
+                    {
+                        w=i;
+                    }
+                }
+                arr.remove(w);
+                break;
+
 
 
 
